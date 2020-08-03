@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background-image: linear-gradient(120deg, #D9BDAD, #D9A679);
+}
+
+header {
+  font-size: 5rem;
+}
+
+h2 {
+  margin: 15px;
+  padding: 5px 20px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 30px;
+}
+
+h3 {
+  margin: 5px;
+}
+
+input {
+  border: none;
+  border: solid 1px #000;
+  border-radius: 30px;
+  padding: 8px 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.input-container {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(190, 190, 190, 0.8);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.name-input {
+  height: 250px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  border: none;
+  border: solid 1px #000;
+  border-radius: 30px;
+  background-color: transparent;
+  padding: 5px 30px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.players {
+  font-size: 2rem;
+}
+
+.grid {
+  height: 420px;
+  width: 420px;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 80px;
+}
+
+.square {
+  height: 140px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 4px #000;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  color: #000;
+  font-size: 5rem;
+}
+
+.fa-times,
+.fa-circle {
+  pointer-events: none;
+}
+
+.square:hover {
+  background-color: rgba(190, 190, 190, 0.5);
+}
+
+.square:active {
+  background-color: rgba(100, 100, 100, 0.5);
+}
+
+.players div {
+  margin: 10px 80px;
+}
+
+.gameOver-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+  transition: all 0.5s ease;
+  background-color: transparent;
+}
+
+.nextGame-btn {
+  font-size: 1rem;
+}
+
+.restart-btn {
+  font-size: 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+.turns {
+  font-size: 1.5rem;
+}

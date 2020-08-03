@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+  <div class="input-container hide">
+    <h2>Enter Name of the Players:</h2>
+    <div class="name-input">
+      <h3>Player One</h3>
+      <input class="playerOne-input" type="text" value="Player 1" placeholder="Enter Name" />
+      <h3>Player Two</h3>
+      <input class="playerTwo-input" type="text" value="Player 2" placeholder="Enter Name" />
+      <button class="btn play-btn">Play</button>
+    </div>
+  </div>
+
+  <header>Tic-Tac-Toe</header>
+
+  <button class="btn restart-btn">Restart</button>
+
+  <div id="container">
+    <!-- Dynamically changes the name of the players with JavaScript according to the input -->
+    <div id="player1" class="players"><em>Player 1</em> : <b>0</b></div>
+    <div class="grid"></div>
+    <div id="player2" class="players"><em>Player 2</em> : <b>0</b></div>
+  </div>
+
+  <div class="turns">
+    <h3 class="turn"><b>
+        <!-- Dynamically changes the icon according to the turn -->
+      </b>'s Turn</h3>
+  </div>
+
+  <div class="gameOver-container hide">
+    <!-- Dynamically changes the gameover condition according to who won -->
+    <h1><em></em><span></span></h1>
+    <button class="btn nextGame-btn">Next Game</button>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
